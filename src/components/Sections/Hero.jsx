@@ -20,7 +20,7 @@ const Hero = ({headerHeight}) => {
             <h1 className='text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold text-gray-100'>Strategic Clarity. <br />
             <span className='italic text-lime-500' >Sustainable Growth.</span></h1>
 
-            <p className='text-[15px] font-semibold w-[40%] text-gray-100 tracking-wider'>
+            <p className='text-[15px] font-semibold w-[90%] lg:w-[40%] text-gray-100 tracking-wider'>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit earum repellat atque? Soluta, inventore eius. Voluptate ipsa nemo ullam explicabo!</p>
 
               <button onClick={() => {navproject('/projects'); }}
