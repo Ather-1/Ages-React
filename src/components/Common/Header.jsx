@@ -5,7 +5,7 @@ import Logo from '../../assets/AgesLogo.png';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <header className="fixed top-0 left-0 w-full z-10 shadow-md">
+    <header className="shadow-md">
       <div className="LRP flex items-center justify-between p-4">
         <div className="">
           <img src={Logo} alt="" className="h-20 w-auto"/>
@@ -30,7 +30,7 @@ const Header = () => {
 
       {isMenuOpen && (
         <div 
-          className={`lg:hidden fixed top-1/2 left-1/2 w-[85%] h-[70%] z-10 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ease-in-out border border-gray-400 rounded-xl bg-gray-400/75
+          className={`lg:hidden fixed top-1/2 left-1/2 w-[85%] h-[70%] z-50 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ease-in-out border border-gray-400 rounded-xl bg-gray-400/75
                       ${isMenuOpen ? 'scale-100 opacity-100' : 'scale-0 opacity-0 pointer-events-none'}`}>
           
           <ul className="flex flex-col gap-y-6 text-2xl h-full items-center justify-center">

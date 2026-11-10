@@ -1,8 +1,12 @@
 import React from 'react'
+import Hero from '../components/Sections/Hero.jsx'
 
-const Home = () => {
+const Home = ({headerHeight}) => {
   return (
-    <div><h2>This is Home Page</h2></div>
+    <div className='flex-1 flex flex-col'>
+      <Hero headerHeight={headerHeight} />
+
+    </div>
   )
 }
 
