@@ -5,8 +5,8 @@ const Hero = ({headerHeight}) => {
   const navproject = useNavigate();
   return (
     <section 
-      className="overflow-hidden  px-12 py-10"
-      style={{ height: `calc(100vh - ${headerHeight+2}px)` }}>
+      className="overflow-hidden  px-12 py-10" style={{ height: `calc(100vh - ${headerHeight-40}px)` }}
+      lg:style={{ height: `calc(100vh - ${headerHeight+2}px)` }}>
 
         <div className='relative w-full h-full rounded-[36px] overflow-hidden border border-gray-400'>
           
