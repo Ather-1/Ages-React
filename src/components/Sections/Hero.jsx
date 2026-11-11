@@ -6,7 +6,7 @@ import Herotag from './HeroTags.jsx'
 
 const Hero = () => {
   return (
-    <section className='w-full h-screen relative'>
+    <section className='w-full h-[75%] lg:h-screen  relative'>
       <div className='absolute inset-0 z-0'>
         <img src={HeroImg} alt="Hero Image" className='w-full h-full object-cover' />
       </div>
