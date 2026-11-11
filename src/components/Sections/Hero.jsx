@@ -1,37 +1,41 @@
-import { useNavigate } from 'react-router-dom';
-import H1Img from '../../assets/Banner/H1.jpg';
+import React from 'react'
+import { H1, H5, Para } from '../Common/Typography.jsx';
+import Btn from "../Common/Btn.jsx";
+import HeroImg from '../../assets/Banner/H1.jpg'
+import Herotag from './HeroTags.jsx'
 
-const Hero = ({headerHeight}) => {
-  const navproject = useNavigate();
+const Hero = () => {
   return (
-    <section 
-      className="h-[calc(80vh-var(--header-h))] md:h-[calc(100vh-var(--header-h))] overflow-hidden px-4 py-6 md:px-12 md:py-10"
-      style={{ '--header-h': `${headerHeight + 2}px` }}>
+    <section className='w-full h-screen relative'>
+      <div className='absolute inset-0 z-0'>
+        <img src={HeroImg} alt="Hero Image" className='w-full h-full object-cover' />
+      </div>
 
-        <div className='relative w-full h-full rounded-4xl overflow-hidden border border-gray-400'>
-          
-          <div className='absolute inset-0 z-0 overflow-hidden'>
-            <img src={H1Img} alt="Hero Image" className='w-full h-full object-cover'/>
+      <div className='absolute inset-0 z-10 bg-black/80'></div>
+      
+      <div className='absolute inset-0 z-20 flex flex-col items-center justify-center '>
+
+          <div className='h-full flex flex-col items-center justify-center text-center gap-6 pt-20'>
+            <H1>Engineering Progress <br /> Across Borders <br /> <span className='italic text-blue font-light'>Since 1995.</span></H1>
+            <Para className='w-[75%]'>
+              AGES Consultants is a professional registered engineering firm staffed and organized to provide multi-disciplinary engineering consulting services. The name AGES is an abbreviation for “Al-Kasib Group of Engineering Services”.
+            </Para>
+            <div className='flex gap-12'>
+              <Btn>See Our projects</Btn>
+              <Btn variant='secondry'>See Our projects</Btn>
+            </div>
           </div>
 
-          <div className='absolute inset-0 z-10 bg-black/60'></div>
+          <div className='grid grid-cols-2 md:grid-cols-4 gap-2 text-center pb-4'>
+            <Herotag tag="Certified Engineers" />
+            <Herotag tag="Global Infrastructure" />
+            <Herotag tag="Sustainable Innovation" />
+            <Herotag tag="Turnkey Solutions" />
 
-          <div className='absolute inset-0 z-20 flex flex-col items-start justify-end gap-6 p-8 md:p-12'>
-            <h1 className='text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold text-gray-100'>Strategic Clarity. <br />
-            <span className='italic text-lime-500' >Sustainable Growth.</span></h1>
-
-            <p className='text-lg md:text-2xl font-medium w-[90%] lg:w-[40%] text-gray-100 tracking-wider'>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit earum repellat atque? Soluta, inventore eius. Voluptate ipsa nemo ullam explicabo!</p>
-
-              <button onClick={() => {navproject('/projects'); }}
-                      className='text-[16px] font-bold tracking-wider px-16 py-3.5 border border-lime-500 bg-lime-500/55 cursor-pointer'>
-                Our Project
-              </button>   
           </div>
 
-        </div>
-
-
+      </div>
+      
     </section>
   )
 }

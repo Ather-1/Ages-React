@@ -1,20 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #0044cc;    /* Your main brand blue */
+  --color-secondary: #ff9900;  /* Your accent color */
+  --color-dark: #2E2E2E;       /* For text */
+  --color-light: #F9FAFA;      /* For backgrounds */
+  --color-blue: #286EF0;
+}
+
 *{
     margin: 0;
-    /* padding: 0; */
     box-sizing: border-box;
 }
-:root {
-    --bg-light: rgb(238, 238, 238);
+
+/* :root {
+    /* --bg-light: rgb(238, 238, 238);
     --bg-dark: rgb(28, 28, 28);
-    --gray: #767676;
+    --gray: #767676; */
     /* --gray: #757575; */
     
-}
+/* } */ 
 html, body {
     font-family: "Nunito", sans-serif;
-    font-size: 62.5%;
     background-color: var(--bg-light);
 }
 .LRP {
@@ -22,6 +30,3 @@ html, body {
     max-width: 1600px;
     margin: 0 auto;
 }
-/* h1 {
-    font-size: 96px;
-} */
