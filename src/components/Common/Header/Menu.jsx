@@ -15,10 +15,10 @@ const Menu = () => {
     return (
         <>
             <nav className="hidden lg:block">
-                <ul className="flex gap-x-4 text-base font-medium text-gray-800">
+                <ul className="flex gap-x-4 text-base font-semibold text-dark tracking-wide">
                 {navLinks.map((link) => (
                     <li key={link.name}>
-                    <Link to={link.path} className="hover:text-blue-600 transition">
+                    <Link to={link.path} className="hover:text-blue transition duration-300">
                         {link.name}
                     </Link>
                     </li>
