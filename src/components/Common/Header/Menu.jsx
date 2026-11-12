@@ -5,7 +5,7 @@ const Menu = () => {
     const [isMenuOpen, setIsOpenMenu] = useState(false);
     const navLinks = [
         { name: 'Home', path: '/' },
-        { name: 'About us', paht: '/about' },
+        { name: 'About us', path: '/about' },
         { name: 'Our Services', path: '/services' },
         { name: 'Our Projects', path: '/projects' },
         { name: 'Contact', path: '/contact' }
@@ -25,6 +25,23 @@ const Menu = () => {
                 ))}
                 </ul>
             </nav>
+
+            <button className='lg:hidden text-lg font-semibold text-dark cursor-pointer focus:outline-none'
+                onClick={() => setIsOpenMenu(!isMenuOpen)} >
+                {isMenuOpen ? '✕' : '☰'}
+            </button>
+
+            <div className={`lg:hidden fixed top-15 right-0 h-full w-[50%] z-50 shadow-2xl transform transition-transform duration-300 ease-in-out bg-white border border-gray-300
+                            ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+                <ul className='flex flex-col items-center text-center p-4 text-sm'>
+                    {navLinks.map((link) => (
+                        <li className='w-full py-2.5 border-b border-gray-200'
+                                    onClick={() => setIsOpenMenu(false)}>
+                            <Link to={link.path}>{link.name}</Link>
+                        </li>
+                    ))}
+                </ul>
+            </div>
 
 
         </>
