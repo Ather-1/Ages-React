@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
-import Header from './components/Common/Header';
-import Footer from './components/Common/Footer';
+import Header from './components/Common/Header/Header';
+// import Footer from './components/Common/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
@@ -8,20 +8,6 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 
 const App = () => {
-  // const headerRef = useRef(null);
-  // const [headerHeight, setHeaderHeight] = useState(0);
-  // useEffect(() => {
-  //   const measureHeight = () => {
-  //     if (headerRef.current) {
-  //       setHeaderHeight(headerRef.current.offsetHeight);
-  //     }
-  //   };
-  //   measureHeight();
-  //   window.addEventListener('resize', measureHeight);
-  //   return window.removeEventListener('resize', measureHeight);
-  // }, []);
-
-
   return (
     <div>
       <Header />
@@ -32,7 +18,7 @@ const App = () => {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

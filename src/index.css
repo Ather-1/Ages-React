@@ -2,14 +2,18 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #0044cc;    /* Your main brand blue */
-  --color-secondary: #ff9900;  /* Your accent color */
-  --color-dark: #2E2E2E;       /* For text */
-  --color-light: #F9FAFA;      /* For backgrounds */
-  --color-blue: #286EF0;
+    --color-primary: #0044cc;
+    /* Your main brand blue */
+    --color-secondary: #ff9900;
+    /* Your accent color */
+    --color-dark: #2E2E2E;
+    /* For text */
+    --color-light: #F9FAFA;
+    /* For backgrounds */
+    --color-blue: #286EF0;
 }
 
-*{
+* {
     margin: 0;
     box-sizing: border-box;
 }
@@ -18,13 +22,15 @@
     /* --bg-light: rgb(238, 238, 238);
     --bg-dark: rgb(28, 28, 28);
     --gray: #767676; */
-    /* --gray: #757575; */
-    
-/* } */ 
-html, body {
+/* --gray: #757575; */
+
+/* } */
+html,
+body {
     font-family: "Nunito", sans-serif;
     background-color: var(--bg-light);
 }
+
 .LRP {
     width: 95%;
     max-width: 1600px;
