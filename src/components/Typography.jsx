@@ -2,7 +2,7 @@
 
 export const H1 = ({children, className=''}) => {
     return (
-    <h1 className={`text-4xl/11 md:text-5xl lg:text-6xl font-semibold tracking-wider ${className}`}>
+    <h1 className={`text-4xl md:text-5xl lg:text-6xl/20 xl:text-6xl/18 font-semibold tracking-wider ${className}`}>
         {children}
     </h1>
     )
@@ -29,7 +29,7 @@ export const Btn = ({children, to='', className=''}) => {
 export const Tag = ({children}) => {
     return (
         <small 
-        className="px-4 py-1 text-xs lg:px-5 text-gray-300 font-medium tracking-wider
+        className="px-4 py-1 text-xs md:text-sm lg:px-5 text-gray-300 font-medium tracking-wider
                     border border-gray-500 rounded-3xl bg-black/65">
             {children}
         </small>

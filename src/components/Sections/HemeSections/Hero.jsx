@@ -17,13 +17,13 @@ const Hero = () => {
 
         <div className='absolute inset-0 z-20 flex flex-col'>
 
-            <div className='border flex-1 flex flex-col justify-center items-center text-center gap-5 p-3.5 lg:items-start lg:text-start lg:w-[80%] lg:gap-8'>
-                <H1 className='text-light'>We Design The Path. <span className='italic text-orange-400 '>And Walk With You.</span></H1>
+            <div className='flex-1 flex flex-col justify-center items-center text-center gap-5 p-3.5 lg:p-5 lg:items-start lg:text-start lg:w-[80%] lg:gap-8'>
+                <H1 className='text-light'>We Design The Path. <br /> <span className='italic text-orange-400 font-medium'>And Walk With You.</span></H1>
 
                 <Para className='text-gray-200 lg:w-[75%]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus porro natus facilis voluptate voluptatem quisquam a labore nisi.</Para>
                 <Btn>See Our Projects</Btn>
             </div>
-            <div className='border mt-auto flex items-center justify-center gap-4 p-3'>
+            <div className='mt-auto flex items-center justify-center gap-4 p-3.5'>
                 <Tag>&bull; Precision</Tag>
                 <Tag>&bull; Integrity</Tag>
                 <Tag>&bull; Innovation</Tag>
