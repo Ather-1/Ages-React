@@ -1,10 +1,14 @@
-import React from 'react'
+import Hero from '../components/Sections/HemeSections/Hero.jsx';
 
 const Home = () => {
   return (
     <div>
-      This is Home Page 
+      <Hero />
+
     </div>
+        
+
+
   )
 }
 

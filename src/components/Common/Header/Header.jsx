@@ -22,13 +22,10 @@ const Header = () => {
         return () => window.removeEventListener('resize', measureHeight);
     }, []);
 
-
     const goToHome  = () => {
         navigateToHome('/');
     };
     
-
-
     return (
         <header ref={headerRef} className='shadow-md'>
             <div className='LRP flex items-center justify-between pl-2 pr-4'>
