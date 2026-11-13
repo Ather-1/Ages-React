@@ -26,12 +26,3 @@ export const Btn = ({children, to='', className=''}) => {
     )
 }
 
-export const Tag = ({children}) => {
-    return (
-        <small 
-        className="px-4 py-1 text-xs md:text-sm lg:px-5 text-gray-300 font-medium tracking-wider
-                    border border-gray-500 rounded-3xl bg-black/65">
-            {children}
-        </small>
-    )
-}

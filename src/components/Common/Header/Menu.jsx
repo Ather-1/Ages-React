@@ -32,7 +32,7 @@ const Menu = ({headerHeight}) => {
             </button>
 
 
-            <div className={`lg:hidden fixed right-0 w-[50%] z-50 shadow-2xl transform transition-transform duration-300 ease-in-out bg-white border border-gray-300
+            <div className={`lg:hidden fixed right-0 w-[75%] z-50 shadow-2xl transform transition-transform duration-300 ease-in-out bg-white/80 border border-gray-300
                             ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
                             style={{top: `${headerHeight}px`, height: `calc(100vh - ${headerHeight}px)`}} >
                 <ul className='flex flex-col items-center text-center p-4 text-sm md:text-base md:font-semibold'>
