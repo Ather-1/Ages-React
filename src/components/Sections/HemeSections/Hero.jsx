@@ -8,7 +8,7 @@ import { H1, H5, Para, Btn } from '../../Typography.jsx';
 
 const Hero = () => {
     return (
-    <section className='relative w-full h-[70vh] lg:h-[calc(100vh-var(--header-h))] bg-amber-300'>
+    <section className='relative w-full h-[60vh] lg:h-[calc(100vh-var(--header-h))] bg-amber-300'>
         <div className='absolute inset-0 z-0 bg-amber-950'>
             <img src={HeroImage} alt="Hero Image" className='w-full h-full object-cover' />
         </div>
