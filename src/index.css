@@ -2,9 +2,14 @@
 @import "tailwindcss";
 
 @theme {
-    --color-dark: #2E2E2E; 
-    --color-light: #F9FAFA; 
+    --color-dark: #353839; 
+    --color-bg: #dbd7cc;
+    --color-fg: #edece6;
+    --color-txtl: #dbd7cc;
+    --color-txtd: #141414;
+
     --color-blue: #286EF0;
+    --color-gry: #808080;
 }
 
 * {
@@ -22,7 +27,7 @@
 html,
 body {
     font-family: "Nunito", sans-serif;
-    background-color: var(--bg-light);
+    background-color: var(--color-bg);
 }
 
 .LRP {
