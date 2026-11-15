@@ -16,7 +16,7 @@ const Hero = () => {
         
         <div className='absolute inset-0 z-20 grid grid-cols-1 lg:grid-cols-2'>
 
-            <div className='border border-amber-50 flex flex-col gap-5 items-start justify-end-safe p-3.5 lg:p-6'>
+            <div className='border border-amber-50 flex flex-col gap-5 items-start justify-center lg:justify-end p-3.5 lg:p-6'>
                 <H1 className='text-txtl italic'>Build & growth <br /> with scalable tools</H1>
                 <Para className='w-[90%] text-txtl'>Easily adapt to changes and scale your operatiions with our flexible infrastructure, designed to support to support your business growth.</Para>
                 <div className='flex items-center gap-8'>
