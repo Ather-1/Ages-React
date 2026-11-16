@@ -2,9 +2,11 @@
 @import "tailwindcss";
 
 @theme {
-    --color-dark: #353839; 
+    --color-dark: #000000;
+
     --color-bg: #dbd7cc;
     --color-fg: #edece6;
+
     --color-txtl: #dbd7cc;
     --color-txtd: #141414;
 
@@ -34,4 +36,31 @@ body {
     width: 95%;
     max-width: 1600px;
     margin: 0 auto;
+}
+
+li {list-style: none;}
+
+
+
+
+/* 1. Define the animations */
+@keyframes slideInRight {
+  0% { opacity: 0; transform: translateX(50px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideUp {
+  0% { opacity: 0; transform: translateY(50px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* 2. Create utility classes to use them */
+.anim-slide-right {
+  animation: slideInRight 0.8s ease-out forwards;
+  opacity: 0; /* Hidden until animation starts */
+}
+
+.anim-slide-up {
+  animation: slideUp 0.8s ease-out forwards;
+  opacity: 0; /* Hidden until animation starts */
 }
