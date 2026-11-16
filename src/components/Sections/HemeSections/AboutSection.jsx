@@ -11,7 +11,7 @@ const AboutSection = () => {
 
             <div className='flex flex-col gap-4 items-start p-2 '>
                 <SectionTag tag={'BEYOND THE ADDRESS'} />
-                <H2 className='sectionTag'>Spaces That Shape The Way We Live.</H2>                
+                <H2 className='sectionTag'>Spaces That Shape The Way We <span className='italic'>Live.</span></H2>                
                 <Para>
                     AGES Consultants is a professional registered engineering firm staffed and organized to provide multi-disciplinary engineering consulting services. The name AGES is an abbreviation for “Al-Kasib Group of Engineering Services”.
                 </Para>
