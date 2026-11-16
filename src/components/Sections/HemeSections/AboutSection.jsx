@@ -7,7 +7,7 @@ import Img2 from '../../../assets/Service/6-Transportation.jpg';
 const AboutSection = () => {
   return (
     <section className='py-12 md:py-14'>
-        <div className='LRP grid grid-cols-1  gap-6'>
+        <div className='LRP grid grid-cols-1  gap-4'>
 
             <div className='flex flex-col gap-4 items-start p-2 '>
                 <SectionTag tag={'BEYOND THE ADDRESS'} />
@@ -24,19 +24,19 @@ const AboutSection = () => {
 
 
 
-            <div className='grid grid-cols-3 grid-rows-3 gap-2 border border-gray-300 p-2 rounded-2xl bg-fg shadow-2xl'>
+            <div className='grid grid-cols-3 grid-rows-3 gap-2 border border-gray-300 p-2 rounded-lg bg-fg shadow-2xl'>
 
-                <div className='col-span-2 row-span-3 rounded-2xl overflow-hidden border-gray-700'>
+                <div className='col-span-3 row-span-2 h-60  rounded-lg overflow-hidden border '>
                     <img src={Img1} alt="" className='w-full h-full object-cover' />
                 </div>
 
-                <div className='col-span-1 row-span-2 rounded-2xl overflow-hidden '>
+                <div className='col-span-2 row-span-1 h-28 rounded-lg overflow-hidden '>
                     <img src={Img2} alt="" className='w-full h-full object-cover' />
                 </div>
 
-                <div className='col-span-1 row-span-1 rounded-2xl flex flex-col gap-2 items-start justify-center p-3 bg-dark'>
+                <div className='col-span-1 row-span-1 h-28 rounded-lg flex flex-col gap-1 items-start justify-center p-3 bg-dark'>
                     <H5>98%</H5>
-                    <Para className='text-txtl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deserunt voluptates, doloribus molestiae tempore consectetur?</Para>
+                    <Para className='text-txtl'>Client Satisfication.</Para>
                 </div>
             </div>
 
