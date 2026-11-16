@@ -24,7 +24,7 @@ const AboutSection = () => {
 
 
 
-            <div className='grid grid-cols-3 grid-rows-3 gap-2 border border-gray-300 p-2 rounded-lg bg-fg shadow-2xl'>
+            <div className='grid grid-cols-3 grid-rows-3 gap-1.5 border border-gray-300 p-1.5 rounded-lg bg-fg shadow-2xl'>
 
                 <div className='col-span-3 row-span-2 h-60  rounded-lg overflow-hidden border '>
                     <img src={Img1} alt="" className='w-full h-full object-cover' />
