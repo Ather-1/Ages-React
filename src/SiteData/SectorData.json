@@ -1,0 +1,88 @@
+
+[
+    {
+        "id":1,
+        "title": "Barrages, Dams & Diversion Weirs.",
+        "image": "../../assets/Sectors/1-Dams.jpg",
+        "description": "Precision topographic and geospatial surveys that ground every decision in accurate data."
+        
+    },
+    {
+        "id":2,
+        "title": "Irrigation & Drainage Systems.",
+        "image": "../../assets/Sectors/2-Irrigation.jpg",
+        "description": "End-to-end engineering for hydropower and water-storage dams, from feasibility to commissioning."
+        
+    },
+    {
+        "id":3,
+        "title": "Flood Control & Protection Works.",
+        "image": "../../assets/Sectors/3-Flood.jpg",
+        "description": "Safe, sustainable water supply and sanitation systems for growing communities."
+        
+    },
+    {
+        "id":4,
+        "title": "On-farm Water Management System.",
+        "image": "../../assets/Sectors/4-FarmWater.jpg",
+        "description": "Master plans that balance growth, mobility and livability for modern cities."
+        
+    },
+    {
+        "id":5,
+        "title": "Hydropower projects.",
+        "image": "../../assets/Sectors/5-Hydropower.jpg",
+        "description": "Intelligent 3D models that unify design, cost and construction in one source of truth."
+        
+    },
+    {
+        "id":6,
+        "title": "Drinking Water Supply & treatment Plant.",
+        "image": "../../assets/Sectors/6-Water.jpg",
+        "description": "Precision topographic and geospatial surveys that ground every decision in accurate data."
+        
+    },
+    {
+        "id":7,
+        "title": "Sewerage & Drainage System.",
+        "image": "../../assets/Sectors/7-Drainage.jpg",
+        "description": "Data-driven transport studies and corridor planning for efficient movement."
+        
+    },
+    {
+        "id":8,
+        "title": "Transmission & Distribution System.",
+        "image": "../../assets/Sectors/8-Transmission.jpg",
+        "description": "Highways, bridges and infrastructure engineered for safety and durability."
+        
+    },
+    {
+        "id":9,
+        "title": "Motorways, Expressways & Highways.",
+        "image": "../../assets/Sectors/9-Roads.jpg",
+        "description": "Ground investigation and mining studies that de-risk what lies beneath."
+        
+    },
+    {
+        "id":10,
+        "title": "Urban, Rural & Farm to Market Roads.",
+        "image": "../../assets/Sectors/farmToRoads.jpg",
+        "description": "Cost, schedule and quality control that keeps complex projects on track."
+        
+    },
+    {
+        "id":11,
+        "title": "Bridges, Causeways, Flyovers & Underpasses.",
+        "image": "../../assets/Sectors/11-Bridges.jpg",
+        "description": "Clear, compliant documentation that protects every stakeholder."
+        
+    },
+    {
+        "id":12,
+        "title": "Residential, Commercial, Educational & industrial Buildings and Health Facilities.",
+        "image": "../../assets/Sectors/12-buildings.jpg",
+        "description": "Strategic development of water, energy and land resources for long-term value."
+        
+    }
+]
+

@@ -10,9 +10,16 @@ export const H1 = ({children, className=''}) => {
 
 export const H2 = ({children, className=''}) => {
     return (
-        <h2 className={`text-3xl md:text-5xl lg:text-[62px] leading-[1.14] font-normal text-dark ${className}`}>
+        <h2 className={`text-3xl md:text-5xl lg:text-[64px] leading-[1.14] font-medium text-dark ${className}`}>
             {children}
         </h2>
+    )
+}
+export const H3 = ({children, className=''}) => {
+    return (
+        <h3 className={`text-3xl md:text-5xl lg:text-[32px] ${className}`}>
+            {children}
+        </h3>
     )
 }
 
@@ -21,7 +28,7 @@ export const H2 = ({children, className=''}) => {
 
 export const H5 = ({children, className=''}) => {
     return (
-        <h5 className={`font-[Merriweather] text-3xl md:text-3xl lg:text-4xl font-medium text-amber-300 ${className}`}>
+        <h5 className={`font-[Merriweather] text-3xl md:text-3xl lg:text-5xl font-medium text-amber-300 ${className}`}>
             {children}
         </h5>
     )

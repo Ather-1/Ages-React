@@ -1,5 +1,5 @@
 import { H2, H5, Para, SectionTag, Btn, List } from '../../Typography.jsx';
-import Img1 from '../../../assets/Sector/8-Transmission.jpg';
+import Img1 from '../../../assets/Sectors/8-Transmission.jpg';
 import Img2 from '../../../assets/Service/6-Transportation.jpg';
 
 
