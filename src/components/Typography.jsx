@@ -17,7 +17,7 @@ export const H2 = ({children, className=''}) => {
 }
 export const H3 = ({children, className=''}) => {
     return (
-        <h3 className={`text-3xl md:text-5xl lg:text-[32px] ${className}`}>
+        <h3 className={`text-lg md:text-5xl lg:text-[32px] text-txtl ${className}`}>
             {children}
         </h3>
     )
