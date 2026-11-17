@@ -17,7 +17,7 @@ export const H2 = ({children, className=''}) => {
 }
 export const H3 = ({children, className=''}) => {
     return (
-        <h3 className={`text-lg md:text-5xl lg:text-[32px] text-txtl ${className}`}>
+        <h3 className={`text-lg md:text-2xl lg:text-4xl font-normal text-txtl ${className}`}>
             {children}
         </h3>
     )
@@ -51,10 +51,14 @@ export const Para = ({children, className=''}) => {
     )
 }
 
-export const Btn = ({children, onClick='', className=''}) => {
+export const Btn = ({children, onClick='', className='', variant = 'Primary'}) => {
+    const variants = {
+        Primary : 'text-base font-semibold px-6 py-2 rounded-sm border text-txtl border-gray-400 bg-black/40 hover:bg-gray-400 hover:text-dark',
+        NavArrow : 'text-sm font-bold text-gray-400 border px-2.5 py-1 rounded-sm hover:bg-gray-400/40 hover:text-txtd '
+    }
     return (
         <button onClick = {onClick} 
-        className={`text-base font-semibold px-6 py-2 rounded-sm border text-txtl border-gray-400 bg-black/40 hover:bg-gray-400 hover:text-dark cursor-pointer ${className}`}>
+        className={`cursor-pointer ${variants[variant]} ${className}`}>
             {children}
         </button>
     )
