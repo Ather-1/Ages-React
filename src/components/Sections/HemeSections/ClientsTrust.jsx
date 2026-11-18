@@ -1,0 +1,40 @@
+import ClientCard from "./ClientCard";
+import News1 from '../../../assets/Sectors/3-Flood.jpg';
+import News2 from '../../../assets/Sectors/4-FarmWater.jpg';
+import News3 from '../../../assets/Sectors/11-Bridges.jpg';
+import { H2, Btn } from '../../Typography.jsx';
+
+const ClientsTrust = () => {
+    const News = [
+        {id: 1, Image: News1, Title:"10 Timeless Interior Design trends 2024", Date: "15 Nov 2026"},
+        {id: 2, Image: News2, Title:"10 Timeless Interior Design trends 2024", Date: "15 Nov 2026"},
+        {id: 3, Image: News3, Title:"10 Timeless Interior Design trends 2024", Date: "15 Nov 2026"}
+    ];
+
+
+    return (
+        <section className="py-12">
+            <div className="LRP flex flex-col gap-4">
+                <div className="flex items-end justify-between">
+                    <H2>Latest From Our Blog</H2>
+                    <Btn>View All Articles</Btn>
+                </div>
+
+
+                <div className="flex flex-col gap-2">
+                {News.map((Data) => {
+                    return (
+                        <ClientCard 
+                        key={Data.id}
+                        NewsImg={Data.Image}
+                        Title={Data.Title}
+                        Date={Data.Date}/>
+                    )
+                })}
+                </div>
+            </div>
+        </section>
+    )
+}
+
+export default ClientsTrust
