@@ -24,9 +24,9 @@ const Sector = () => {
 
     return (
         <section className="py-12">
-            <div className="LRP flex flex-col gap-3">
+            <div className="LRP flex flex-col gap-4">
                 <div className="">
-                    <H2 className="border-l-3 border-orange-700 pl-1">Our Sectors</H2>
+                    <H2 className="border-l-4 border-orange-700 pl-2">Our Sectors</H2>
                 </div>
                 <div>
                     <SectorCard 

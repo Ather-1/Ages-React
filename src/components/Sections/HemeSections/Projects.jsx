@@ -14,12 +14,14 @@ const Projects = () => {
     return (
 
         <section className='py-12 bg-fg'>
-            <div className='LRP flex flex-col gap-2'>
+            <div className='LRP flex flex-col gap-5'>
                 <div className='flex items-center justify-between'>
-                    <H2>Feature Projects</H2>
-                    <Btn Icon={BsArrowRightShort} onClick={GoToProjects}>
-                        View All Projects
-                    </Btn>
+                    <H2 className='border-l-4 border-orange-700 pl-2'>Feature Projects</H2>
+                    <div className='hidden md:block'>
+                        <Btn Icon={BsArrowRightShort} onClick={GoToProjects}>
+                            View All Projects
+                        </Btn>
+                    </div>
                 </div>
 
 
@@ -33,6 +35,11 @@ const Projects = () => {
                             Site={Prj.location} />
                         )
                     })}
+                </div>
+                <div className='flex items-center justify-end md:hidden'>
+                        <Btn Icon={BsArrowRightShort} onClick={GoToProjects}>
+                            View All Projects
+                        </Btn>
                 </div>
             </div>
         </section>

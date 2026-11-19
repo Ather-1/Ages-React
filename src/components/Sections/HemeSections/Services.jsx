@@ -10,22 +10,29 @@ const Services = () => {
         NavigateToServices("/services");
     };
   return (
-    <section className='py-14'>
-        <div className='LRP flex flex-col gap-6'>
+    <section className='py-12'>
+        <div className='LRP flex flex-col gap-5'>
             <div className='flex justify-between items-end-safe pr-4'>
-                <H2>Our Services</H2>
-                <Btn Icon={BsArrowRightShort} onClick={GoToServices}>
-                    Explore our Services
-                </Btn>
+                <H2 className='border-l-4 border-orange-700 pl-2'>Our Services</H2>
+                <div className='hidden md:block'>
+                    <Btn Icon={BsArrowRightShort} onClick={GoToServices}>
+                        Explore our Services
+                    </Btn>
+                </div>
             </div>
 
-            <div className='grid grid-cols-2 lg:grid-cols-4 gap-3 p-3 lg:p-8'>
+            <div className='grid grid-cols-2 lg:grid-cols-4 gap-3'>
                 {GetData.map((Card) => (
                     <ServiceCard 
                         key={Card.id}
                         Image={Card.image}
                         Heading={Card.title} />
                 ))}
+            </div>
+            <div className='flex items-center justify-end md:hidden'>
+                    <Btn Icon={BsArrowRightShort} onClick={GoToServices}>
+                        Explore our Services
+                    </Btn>
             </div>
 
         </div>

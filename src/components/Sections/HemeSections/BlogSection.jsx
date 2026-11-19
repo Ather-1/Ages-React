@@ -20,12 +20,14 @@ const BlogSection = () => {
 
     return (
         <section className="py-12">
-            <div className="LRP flex flex-col gap-4">
+            <div className="LRP flex flex-col gap-5">
                 <div className="flex items-end justify-between">
-                    <H2>Latest From <br /> Our Blog</H2>
-                    <Btn Icon={BsArrowRightShort} onClick={GoToBlog}>
-                        View All Articles
-                    </Btn>
+                    <H2 className="border-l-4 border-orange-700 pl-2">Latest From Our Blog</H2>
+                    <div className="hidden md:block">
+                        <Btn Icon={BsArrowRightShort} onClick={GoToBlog}>
+                            View All Articles
+                        </Btn>
+                    </div>
                 </div>
 
 
@@ -39,6 +41,12 @@ const BlogSection = () => {
                         Date={Data.Date}/>
                     )
                 })}
+                </div>
+
+                <div className="flex items-center justify-end md:hidden">
+                        <Btn Icon={BsArrowRightShort} onClick={GoToBlog}>
+                            View All Articles
+                        </Btn>
                 </div>
             </div>
         </section>
