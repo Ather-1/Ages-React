@@ -47,6 +47,20 @@ export const H6 = ({children, className=''}) => {
     )
 }
 
+
+export const FooterHeading = ({children, className=''}) => (
+    <h6 className="text-sm font-medium tracking-wider text-txtl">
+        {children}
+    </h6>
+)
+
+
+
+
+
+
+
+
 export const Para = ({children, className=''}) => {
     return (
         <p 

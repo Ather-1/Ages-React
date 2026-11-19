@@ -1,6 +1,7 @@
 import AgesLogo from "../../../assets/AgesLogo.png";
-import { Para, H6, Btn } from "../../Typography";
+import { Para, H6, Btn, FooterHeading } from "../../Typography";
 import { Link } from "react-router-dom";
+import NavLinks from '../Header/Menu';
 
 const Footer = () => {
 
@@ -15,9 +16,9 @@ const Footer = () => {
 
     return (
         <section className="flex flex-col gap-6 p-4 bg-black">
-            <div className="grid grid-cols-4 border-b border-b-gray-700 p-4">
+            <div className="grid grid-cols-2 grid-rows-3 gap-1 lg:grid-cols-4 lg:grid-rows-1 border-b border-b-gray-700 lg:p-4">
 
-                <div className="flex flex-col items-start gap-6 p-4 border-r border-r-gray-700">
+                <div className="col-span-2 row-span-1 flex flex-col items-center text-center gap-6 p-4 lg:border-r border-r-gray-700">
                     <img src={AgesLogo} alt="Ages Logo" className="h-16" />
                     <Para className="text-txtl">
                         We believe great design improves the way you live. our mission is to
@@ -27,9 +28,9 @@ const Footer = () => {
 
 
 
-                <div className="flex flex-col items-center justify-start text-center gap-2 p-2.5 border-r border-r-gray-700">
-                    <H6 className="text-txtl">Quick Links</H6>
-                    <ul className="text-txtl">
+                <div className="col-span-1 row-span-1 flex flex-col items-center justify-start text-center gap-2 p-2.5 border-r border-r-gray-700">
+                    <FooterHeading>Quick Links</FooterHeading>
+                    <ul className="flex flex-col gap-0.5 text-xs font-medium tracking-wider text-gray-400">
                         {quickLinks.map((links) => {
                             return (
                                 <li key={links.name}>
@@ -42,21 +43,21 @@ const Footer = () => {
 
 
 
-                <div className="flex flex-col items-center justify-start text-center gap-2 p-2.5 border-r border-r-gray-700">
-                    <H6 className="text-txtl" >Quick Links</H6>
-                    <div>
-                        <Para className="text-txtl">Hello@ABC.com</Para>
-                        <Para className="text-txtl">+91 1234567890</Para>
-                        <Para className="text-txtl">123 design Street, <br /> Peshawar, Pakistan</Para>
-                    </div>
+                <div className="col-span-1 row-span-1 flex flex-col items-center justify-start text-center gap-2 p-2.5 lg:border-r border-r-gray-700">
+                    <FooterHeading>Contact Us</FooterHeading>
+                    <ul className="flex flex-col gap-1 text-xs font-medium tracking-wider text-gray-400">
+                        <li>Hello@ABC.com</li>
+                        <li>+91 1234567890</li>
+                        <li>123 design Street, <br /> Peshawar, Pakistan</li>
+                    </ul>
                 </div>
 
 
 
 
 
-                <div className="flex flex-col items-start gap-2 p-2.5">
-                    <H6 className="text-txtl">Newsletter</H6>
+                <div className="col-span-2 row-span-1 flex flex-col items-start gap-2 p-2.5">
+                    <FooterHeading>Newsletter</FooterHeading>
                     <div>
                         <Para className="text-txtl">Subscribe to our newsletter for the latest updates and offers.</Para>
                         <div>
