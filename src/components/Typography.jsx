@@ -31,9 +31,6 @@ export const H4 = ({children, className=''}) => {
     )
 }
 
-
-
-
 export const H5 = ({children, className=''}) => {
     return (
         <h5 className={`font-[Merriweather] text-3xl md:text-3xl lg:text-5xl font-medium text-amber-300 ${className}`}>
