@@ -36,15 +36,15 @@ const AboutSection = () => {
                 </div>
 
                 <div className="grid grid-cols-3 grid-rows-3 gap-1.5 lg:h-3/4 border border-gray-300 p-1.5 rounded-lg bg-fg shadow-2xl">
-                    <div className="col-span-3 row-span-2 lg:col-span-2 lg:row-span-3 h-64 lg:h-full rounded-lg overflow-hidden border border-gray-500 ">
+                    <div className="col-span-3 row-span-2 lg:col-span-2 lg:row-span-3 h-56 lg:h-full rounded-lg overflow-hidden border border-gray-500 ">
                         <img src={Img1} alt="" className="w-full h-full object-cover" />
                     </div>
 
-                    <div className="col-span-2 row-span-1 lg:col-span-1 lg:row-span-2 h-32 lg:h-full rounded-lg overflow-hidden border border-gray-500">
+                    <div className="col-span-2 row-span-1 lg:col-span-1 lg:row-span-2 h-28 lg:h-full rounded-lg overflow-hidden border border-gray-500">
                         <img src={Img2} alt="" className="w-full h-full object-cover" />
                     </div>
 
-                    <div className="col-span-1 row-span-1 h-32 lg:h-full rounded-lg flex flex-col gap-0.5 items-start justify-center p-3 bg-dark border border-gray-500">
+                    <div className="col-span-1 row-span-1 h-28 lg:h-full rounded-lg flex flex-col gap-0.5 items-start justify-center p-3 bg-dark border border-gray-500">
                         <H5>98%</H5>
                         <Para className="text-txtl">Client Satisfication.</Para>
                     </div>
