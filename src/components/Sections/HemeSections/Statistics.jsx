@@ -13,7 +13,7 @@ const Statistics = () => {
         <section className='py-12 border bg-dark'>
             <div className='LRP border flex flex-col gap-4'>
                 <div className=''>
-                    <H2 className='text-txtl'>Building Space <br /> That Tell <span className='font-[Merriweather] font-light italic'>Stories</span></H2>
+                    <H2 className='text-txtl'>Building Space <br /> That Tell <span className='font-light italic'>Stories.</span></H2>
                 </div>
 
 

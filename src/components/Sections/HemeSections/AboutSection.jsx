@@ -14,10 +14,9 @@ const AboutSection = () => {
         <section className="py-12 md:py-14">
             <div className="LRP grid grid-cols-1 lg:grid-cols-2 items-center  gap-4">
                 <div className="flex flex-col gap-4 items-start p-2 ">
-                    <SectionTag tag={"BEYOND THE ADDRESS"} />
+                    <SectionTag Icon={BsArrowRightShort} tag={"BEYOND THE ADDRESS"} />
                     <H2 className="sectionTag">
-                        Spaces That Shape The Way We{" "}
-                        <span className="font-[Merriweather] font-medium italic">
+                        Spaces That Shape <br />The Way We <span className="font-light italic">
                             Live.
                         </span>
                     </H2>

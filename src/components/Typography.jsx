@@ -2,7 +2,7 @@ import { Children } from "react"
 
 export const H1 = ({children, className=''}) => {
     return (
-    <h1 className={`text-4xl md:text-5xl lg:text-6xl xl:text-[58px] font-[Merriweather] font-medium tracking-wider ${className}`}>
+    <h1 className={`font-[Merriweather] text-4xl lg:text-5xl xl:text-[54px] font-light tracking-wider ${className}`}>
         {children}
     </h1>
     )
@@ -10,14 +10,14 @@ export const H1 = ({children, className=''}) => {
 
 export const H2 = ({children, className=''}) => {
     return (
-        <h2 className={`text-3xl md:text-5xl lg:text-[64px] leading-[1.14] font-medium text-dark ${className}`}>
+        <h2 className={`font-[Merriweather] text-3xl md:text-4xl lg:text-[42px] leading-[1.2] tracking-wide font-medium text-txtd ${className}`}>
             {children}
         </h2>
     )
 }
 export const H3 = ({children, className=''}) => {
     return (
-        <h3 className={`text-lg md:text-2xl lg:text-4xl font-normal text-txtl ${className}`}>
+        <h3 className={` text-sm md:text-2xl lg:text-4xl font-medium text-txtl ${className}`}>
             {children}
         </h3>
     )
@@ -33,7 +33,7 @@ export const H4 = ({children, className=''}) => {
 
 export const H5 = ({children, className=''}) => {
     return (
-        <h5 className={`font-[Merriweather] text-3xl md:text-3xl lg:text-5xl font-medium text-amber-300 ${className}`}>
+        <h5 className={`font-[Merriweather] text-3xl md:text-4xl lg:text-5xl font-light text-amber-300 ${className}`}>
             {children}
         </h5>
     )
@@ -80,16 +80,13 @@ export const List = ({list}) => {
 
 
 
-export const SectionTag = ({tag}) => {
-    return (
-        <div className="flex items-center gap-1 bg-gray-400/50 px-3 rounded-full">
-            <span className="text-amber-700 ">&bull;</span>
-            <span className="text-[9px] font-bold text-txtd tracking-wider ">
-                {tag}
-            </span>
-        </div>
-    )
-}
+export const SectionTag = ({tag, Icon=''}) => (
+    <span className="text-[10px] font-bold tracking-wider leading-none inline-flex items-center justify-center gap-0.5 px-2 pr-2.5 py-[0.2px] rounded-full border border-gray-600 bg-gray-500/60 text-txtd">
+        {Icon && <Icon className="text-xl" />}
+        {tag}
+    </span>
+
+)
 
 
 
