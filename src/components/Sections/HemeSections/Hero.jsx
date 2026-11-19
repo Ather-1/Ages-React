@@ -1,11 +1,12 @@
 import { useNavigate } from 'react-router-dom';
 import { H1, H5, Para, Btn } from '../../Typography.jsx';
-import HeroPrjCard from './HeroPrjCard.jsx';
+import HeroPrjCard from '../../Blocks/HeroPrjCard.jsx';
 import HeroImage from '../../../assets/Banner/H3.jpg';
 import HCard1 from '../../../assets/Portfolio/2-Jabori.jpg';
 import HCard2 from '../../../assets/Portfolio/5-Diamer-Basha.jpg';
 import HCard3 from '../../../assets/Portfolio/4-Mohmand.jpg';
-// h-[70vh]
+import { BsArrowRightShort } from "react-icons/bs";
+import { IoIosPlay } from "react-icons/io";
 
 const Hero = () => {
     const navigateToProject = useNavigate();
@@ -25,8 +26,12 @@ const Hero = () => {
                 <H1 className='text-txtl italic'>Build & growth <br /> with scalable tools</H1>
                 <Para className='w-[90%] text-txtl'>Easily adapt to changes and scale your operatiions with our flexible infrastructure, designed to support to support your business growth.</Para>
                 <div className='flex items-center gap-8'>
-                    <Btn onClick={gotoProject}  >Our Projects</Btn>
-                    <Btn>Watch Video</Btn>
+                    <Btn Icon={BsArrowRightShort} onClick={gotoProject} className='text-txtl  hover:bg-gray-800 hover:border-gray-50'>
+                        Our Projects
+                    </Btn>
+                    <Btn Icon={IoIosPlay} className='text-txtl hover:bg-gray-800 hover:border-gray-50'>
+                        Watch Video
+                    </Btn>
                 </div>
             </div>
 

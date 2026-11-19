@@ -1,7 +1,7 @@
-import { H5, Para } from '../../Typography.jsx';
+import { H5, Para } from '../Typography.jsx';
 
 
-const StatCard = ({ heading, title, description, className=''}) => {
+const StatisticCard = ({ heading, title, description, className=''}) => {
     return (
         <div className={`flex flex-col items-start justify-center gap-2.5 md:gap-4 lg:gap-6 p-2 md:p-3 border border-gray-700 rounded-md ${className}`}>
             <H5 className='text-txtl italic'>{heading}</H5>
@@ -14,4 +14,4 @@ const StatCard = ({ heading, title, description, className=''}) => {
     )
 }
 
-export default StatCard
+export default StatisticCard

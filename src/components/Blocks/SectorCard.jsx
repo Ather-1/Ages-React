@@ -1,4 +1,4 @@
-import {H3, Para, Btn} from '../../Typography.jsx';
+import {H3, Para, Btn} from '../Typography.jsx';
 
 const SectorCard = ({Img, title, description, current, total, onNext, onPrev}) => {
   return (

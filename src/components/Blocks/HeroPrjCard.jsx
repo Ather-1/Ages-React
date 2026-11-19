@@ -1,4 +1,4 @@
-import { H6 } from '../../Typography.jsx';
+import { H6 } from '../Typography.jsx';
 
 const HeroPrjCard = ({Image, title, delay}) => {
   return (

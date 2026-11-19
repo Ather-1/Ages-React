@@ -3,7 +3,7 @@ import About from '../components/Sections/HemeSections/AboutSection.jsx';
 import Statistics from '../components/Sections/HemeSections/Statistics.jsx';
 import Sectors from '../components/Sections/HemeSections/Sector.jsx';
 import Services from '../components/Sections/HemeSections/Services.jsx';
-import ClientsTrust from '../components/Sections/HemeSections/ClientsTrust.jsx';
+import BlogSection from '../components/Sections/HemeSections/BlogSection.jsx';
 import Projects from '../components/Sections/HemeSections/Projects.jsx';
 
 
@@ -16,7 +16,7 @@ const Home = () => {
       <Statistics />
       <Sectors />
       <Services />
-      <ClientsTrust />
+      <BlogSection />
       <Projects />
 
     </div>

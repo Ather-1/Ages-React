@@ -1,10 +1,10 @@
-import ClientCard from "./ClientCard";
+import BlogCard from "../../Blocks/BlogCard.jsx";
 import News1 from '../../../assets/Sectors/3-Flood.jpg';
 import News2 from '../../../assets/Sectors/4-FarmWater.jpg';
 import News3 from '../../../assets/Sectors/11-Bridges.jpg';
 import { H2, Btn } from '../../Typography.jsx';
 
-const ClientsTrust = () => {
+const BlogSection = () => {
     const News = [
         {id: 1, Image: News1, Title:"10 Timeless Interior Design trends 2024", Date: "15 Nov 2026"},
         {id: 2, Image: News2, Title:"10 Timeless Interior Design trends 2024", Date: "15 Nov 2026"},
@@ -24,7 +24,7 @@ const ClientsTrust = () => {
                 <div className="flex flex-col gap-2">
                 {News.map((Data) => {
                     return (
-                        <ClientCard 
+                        <BlogCard 
                         key={Data.id}
                         NewsImg={Data.Image}
                         Title={Data.Title}
@@ -37,4 +37,4 @@ const ClientsTrust = () => {
     )
 }
 
-export default ClientsTrust
+export default BlogSection

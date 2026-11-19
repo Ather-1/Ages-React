@@ -1,6 +1,6 @@
-import { H4 } from "../../Typography"
+import { H4 } from "../Typography"
 
-const SrvCard = ({Image, Heading}) => {
+const ServiceCard = ({Image, Heading}) => {
   return (
     <div className='border border-gray-400 rounded-[8px_8px_0_0] lg:rounded-[18px_18px_0_0] overflow-hidden cursor-pointer shadow-md shadow-gray-400/55 hover:shadow-lg hover:shadow-gray-400/80 hover:-translate-y-1.5 '>
         <div className='w-full h-40 md:h-52 lg:h-80'>
@@ -13,4 +13,4 @@ const SrvCard = ({Image, Heading}) => {
   )
 }
 
-export default SrvCard
+export default ServiceCard

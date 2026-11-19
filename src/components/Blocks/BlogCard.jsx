@@ -1,6 +1,4 @@
-
-
-const ClientCard = ({NewsImg, Title, Date}) => {
+const BlogCard = ({NewsImg, Title, Date}) => {
   return (
     <div className='flex items-center gap-1 rounded-lg overflow-hidden border border-r-6 border-gray-600  '>
 
@@ -16,4 +14,4 @@ const ClientCard = ({NewsImg, Title, Date}) => {
   )
 }
 
-export default ClientCard
+export default BlogCard;

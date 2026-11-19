@@ -1,6 +1,6 @@
-import {H4, Btn} from '../../Typography';
+import {H4, Btn} from '../Typography';
 
-const PrjCard = ({ Image, Title, Site }) => {
+const ProjectCard = ({ Image, Title, Site }) => {
     return (
         <div className='relative h-52 lg:h-80 rounded-md overflow-hidden'>
             <div className='absolute inset-0 z-0'>
@@ -21,4 +21,4 @@ const PrjCard = ({ Image, Title, Site }) => {
     )
 }
 
-export default PrjCard
+export default ProjectCard

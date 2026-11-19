@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { SectorData } from '../../../SiteData/SectorData.js';
-import SectorCard from './SectorCard.jsx';
+import SectorCard from '../../Blocks/SectorCard.jsx';
 
 const Sector = () => {
     const [current, setCurrent] = useState(0);
