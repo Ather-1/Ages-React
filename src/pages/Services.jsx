@@ -22,9 +22,10 @@ const Services = () => {
 
       <section className='LRP py-8'>
         <div className='grid grid-cols-1 gap-2'>
-          {ServicesData.map((service) => (
+          {ServicesData.map((service, index) => (
             <ServiceCARD 
               key={service.id}
+              Number={index + 1}
               BgImg={service.image}
               Heading={service.title}
               Points={service.points}
