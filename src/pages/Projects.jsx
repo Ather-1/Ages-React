@@ -1,8 +1,11 @@
-import React from 'react'
+import PageHero from '../components/Blocks/PagesHeroSection';
+import BannerImg from '../assets/Banner/H1.jpg';
 
 const Projects = () => {
   return (
-    <div><h2>This is Project Page</h2></div>
+    <div>
+      <PageHero Image={BannerImg} Heading={'Featured Work'} />
+    </div>
   )
 }
 
