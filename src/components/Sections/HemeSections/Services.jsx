@@ -1,5 +1,5 @@
 import { H2, Btn } from '../../Typography.jsx';
-import { ServicesData } from '../../../SiteData/serviceData.js';
+import { ServicesData } from '../../../SiteData/SiteData.js';
 import ServiceCard from '../../Blocks/ServiceCard.jsx';
 import { BsArrowRightShort } from "react-icons/bs";
 import { useNavigate } from 'react-router-dom';

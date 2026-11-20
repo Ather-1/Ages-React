@@ -71,12 +71,12 @@ export const Para = ({children, className=''}) => {
 
 
 
-export const List = ({list}) => {
+export const List = ({list, className=''}) => {
     return (
         
         <div className="flex items-center gap-2 text-[11px]">
             <span className="text-amber-700">&#10004;</span>
-            <li className="font-semibold tracking-wide">
+            <li className={`font-semibold tracking-wide ${className}`}>
                 {list}
             </li>
         </div>
