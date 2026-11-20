@@ -74,7 +74,7 @@ export const Para = ({children, className=''}) => {
 export const List = ({list}) => {
     return (
         
-        <div className="flex items-center gap-2 text-xs">
+        <div className="flex items-center gap-2 text-[11px]">
             <span className="text-amber-700">&#10004;</span>
             <li className="font-semibold tracking-wide">
                 {list}
