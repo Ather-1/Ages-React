@@ -12,8 +12,8 @@ const About = () => {
 
 
 
-    <section className='LRP flex flex-col gap-8 py-8'>
-      <div className='flex flex-col items-start gap-2.5 '>
+    <section className='LRP flex flex-col gap-6 py-2'>
+      <div className='flex flex-col items-start gap-2.5 border-b border-gray-400 py-4'>
         <H2>Introduction</H2>
 
         <Para><span className='font-bold text-blue-700'>AGES Consultants</span> is a professional registered engineering firm staffed and organized to provide multi-disciplinary engineering consulting services. The name AGES is an abbreviation for “Al-Kasib Group of Engineering Services”, and the term Al-Kasib being an extract from the Arabic quote  which translates to “The one who strives to earn (through fair means) is the beloved of Allah (SWT)”. This quote has a strong basis in the way AGES Consultants conducts its businesses and has been a strong driving force in the firm’s ventures.</Para>
