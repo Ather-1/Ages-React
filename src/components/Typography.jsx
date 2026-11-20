@@ -1,8 +1,13 @@
 import { Children } from "react"
 
-export const H1 = ({children, className=''}) => {
+export const H1 = ({children, className='', Varient='Primary'}) => {
+    const Varients = {
+        Primary : 'font-[Merriweather] text-4xl lg:text-5xl xl:text-[54px] font-light tracking-wider',
+        Secondry : 'font-[Merriweather] text-4xl lg:text-5xl xl:text-[102px] font-light text-txtl tracking-wider'
+    }
+
     return (
-    <h1 className={`font-[Merriweather] text-4xl lg:text-5xl xl:text-[54px] font-light tracking-wider ${className}`}>
+    <h1 className={`${Varients[Varient]} ${className}`}>
         {children}
     </h1>
     )
